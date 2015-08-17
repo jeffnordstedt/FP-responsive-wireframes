@@ -1,0 +1,25 @@
+.hero {
+	@include grid-column(12);
+}
+
+.main-content {
+	@include grid-column(12);
+
+	@media #{$medium-up} { 
+		@include grid-column($columns:9, $pull:3);
+	}
+}
+
+.sidebar {
+	@include grid-column(12);
+
+	@media #{$medium-up} { 
+		@include grid-column($columns:3, $push: 9);
+	}
+}
+
+.buy { 
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}

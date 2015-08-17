@@ -1,0 +1,49 @@
+
+// structure
+
+p:last-of-type { margin-bottom: 0;}
+
+section.wireframe-section {
+	position: relative;
+	border: 1px solid $silver;
+	background: $vapor;
+	padding: $column-gutter $column-gutter / 2 $column-gutter / 2;
+}
+
+.component {
+	position: relative;
+	border-radius: $global-radius;
+	border: 1px solid $iron;
+	background: $gainsboro;
+	padding: $column-gutter;
+	margin-bottom: $column-gutter;
+	
+	&:last-of-type {margin-bottom: $column-gutter / 2;}
+
+	&.image {
+		padding: 0;
+	}
+} 
+
+// Annotations
+
+.has-tip {
+	background: $primary-color;
+	color: white;
+	line-height: 1;
+	padding: 5px $column-gutter / 2;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-size: .6rem;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	border: none;
+	top: -1px;
+
+	&:hover {
+		color: white;
+	}
+
+}
